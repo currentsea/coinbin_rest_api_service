@@ -1,0 +1,10 @@
+version: '3.5'
+
+services:
+  node-crypto-timelock-tool:
+    container_name: nodejs-crypto-restapp
+    build:
+      context: ./project/crypto_node
+      dockerfile: Dockerfile
+    ports:
+      - 8050:8050
